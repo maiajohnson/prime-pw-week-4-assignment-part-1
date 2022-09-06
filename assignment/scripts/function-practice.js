@@ -24,11 +24,13 @@ function helloName( name ) {
 helloName('Christy');
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber ) {
+  console.log('in addNumbers:', firstNumber, secondNumber);
+  let answer = firstNumber + secondNumber;
   // return firstNumber + secondNumber;
+  return answer;
 }
-
-
+console.log('4 & 6 added together equals:', addNumbers(4, 6));
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
 
