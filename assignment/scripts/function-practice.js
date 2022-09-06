@@ -31,11 +31,14 @@ function addNumbers( firstNumber, secondNumber ) {
   return answer;
 }
 console.log('4 & 6 added together equals:', addNumbers(4, 6));
+
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( num0, num1, num2 ){
+  console.log('in multiplyThree', num0, num1, num2);
+  let answer = num0 * num1 * num2;
+  return answer;
 }
-
+console.log('2, 4, & 9 multiplied together equals:', multiplyThree(2, 4, 9));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
