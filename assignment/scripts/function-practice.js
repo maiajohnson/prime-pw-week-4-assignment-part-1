@@ -66,17 +66,34 @@ console.log(getLast([3, 6, 12, -5]));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+let numArray = [1, 2, 3, 4];
+let result;
 function find( value, array ){
-  
-}
-
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value) {
+      result = true;
+    }
+  }
+    if (result == true) {
+      return true; }
+    else {
+      return false;
+    }
+    
+  }
+   
+ console.log(find(5, numArray));
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+if (letter === string[0]) {
+  return true;
+} else {
+  return false;
+}
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
